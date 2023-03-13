@@ -25,10 +25,28 @@
   font-family: 'Nanum Gothic', sans-serif;
 }
 
+/* h2 {
+  margin: 25px;
+} */
+
 h1 {
   font-family: 'Pinyon Script', cursive;
 }
 
+.card {
+  margin-top: 10px;
+  
+}
+
+.card-body {
+  border: solid black 2px;
+  margin: 0;
+  padding: 1rem;
+}
+
+main {
+  background-color: var(--primary-color);
+}
 
 body {
   font-size: 16px;
@@ -42,9 +60,9 @@ body {
   width: 100%;
   height: 200px;
   background: url('https://columbuslandmarks.org/wp-content/uploads/2018/01/header-library-shop.jpg');
-    display: flex;
-    justify-content: center;
-    align-items: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   justify-content: center;
   align-items: center;
 }
@@ -57,72 +75,26 @@ body {
   color: var(--primary-color);
 }
 
-
-.img {
-  height: 600px;
-  width: 50vw;
-  border: solid black 5px;
-  display: flex;
-  justify-content: center;
-}
-
-@media only screen and (max-width: 768px) {
-  .img {
-    width: 100%;
-  }
-}
-
-.parent {
-  display: flex;
-  flex-wrap: wrap;
-  padding: 0;
+.article-image {
+  margin-top: 25px;
+  height: 500px;
+  width: 600px;
 }
 
 
-.example {
-  position: relative;
-  padding: 0;
-  display: block;
-  cursor: pointer;
-  overflow: hidden;
-  flex-basis: calc(50% - 1rem);
-  margin: 0;
-}
 
-
-.content {
-  opacity: 0;
-  font-size: 40px;
-  position: absolute;
-  bottom: 0;
-  left: 0;
-  right: 0;
-  background-color: rgba(200, 200, 200, 0.5);
-  width: 100%;
-  height: 100%;
-  transition: all 400ms ease-out;
-  text-align: center;
-}
-
-.example .content:hover {
-  opacity: 1;
-}
-
-.example .content .text {
-  height: 10;
-  opacity: 1;
-  transition-delay: 0s;
-  transition-duration: 0.4s;
-}
-
-.example .content:hover .text {
-  opacity: 1;
-  transform: translateY(250px);
+.card-img-top {
+  height: 300px;
+  width: 250px;
+  border-top: solid black 2px;
+  border-left: solid black 2px;
+  border-right: solid black 2px;
 }
 
 a:link {
   text-decoration: none;
   cursor: pointer;
+  color: var(--secondary-color);
 }
 
 footer {
@@ -130,7 +102,6 @@ footer {
   color: var(--primary-color);
   text-align: center;
   padding: 1rem;
-  margin-top: auto;
   width: 100%;
   height: 100px;
 }
@@ -138,4 +109,3 @@ footer {
 footer p {
   margin-top: 2rem;
 }
-
