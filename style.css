@@ -1,0 +1,135 @@
+:root {
+  --secondary-color: rgb(44, 39, 42);
+  --primary-color: rgb(232, 230, 213);
+}
+
+.header-2 {
+  height: 200px;
+  background-color: var(--primary-color);
+  color: var(--secondary-color);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 10px;
+}
+
+.header-2 h3 {
+  font-family: 'Nanum Gothic', sans-serif;
+  font-style: italic;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: 'Nanum Gothic', sans-serif;
+}
+
+/* h2 {
+  margin: 25px;
+} */
+
+h1 {
+  font-family: 'Pinyon Script', cursive;
+}
+
+.card {
+  margin-top: 10px;
+  
+}
+
+.card-body {
+  border: solid black 2px;
+  margin: 0;
+  padding: 1rem;
+}
+
+main {
+  background-color: var(--primary-color);
+}
+
+body {
+  font-size: 16px;
+  line-height: 1.5;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+.bg-image {
+  width: 100%;
+  height: 200px;
+  background: url('https://columbuslandmarks.org/wp-content/uploads/2018/01/header-library-shop.jpg');
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  justify-content: center;
+  align-items: center;
+}
+
+.bg-image h1 {
+  font-size: 5rem;
+  text-align: center;
+  margin: 0;
+  padding: 0;
+  color: var(--primary-color);
+}
+
+/* Large screens */
+@media only screen and (min-width: 1200px) {
+  .article-image {
+  margin-top: 25px;
+  height: 500px;
+  width: 600px;
+  }
+  }
+  
+  /* Medium screens */
+  @media only screen and (min-width: 768px) and (max-width: 1199px) {
+  .article-image {
+  margin-top: 20px;
+  height: 375px;
+  width: 450px;
+  }
+  }
+  
+  /* Small screens */
+  @media only screen and (max-width: 767px) {
+  .article-image {
+  margin-top: 15px;
+  height: 250px;
+  width: 300px;
+  }
+  }
+
+.space {
+    height: 100px;
+    background-color: var(--primary-color);
+}
+
+.card-img-top {
+  height: 300px;
+  width: 250px;
+  border-top: solid black 2px;
+  border-left: solid black 2px;
+  border-right: solid black 2px;
+}
+
+a:link {
+  text-decoration: none;
+  cursor: pointer;
+  color: var(--secondary-color);
+}
+
+footer {
+  background: url('https://columbuslandmarks.org/wp-content/uploads/2018/01/header-library-shop.jpg');
+  color: var(--primary-color);
+  text-align: center;
+  padding: 1rem;
+  width: 100%;
+  height: 100px;
+}
+
+footer p {
+  margin-top: 2rem;
+}
