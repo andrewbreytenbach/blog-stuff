@@ -1,6 +1,6 @@
 :root {
   --secondary-color: rgb(44, 39, 42);
-  --primary-color: rgb(232, 230, 213);
+  --primary-color: rgb(255, 255, 255);
 }
 
 .header-2 {
@@ -53,6 +53,7 @@ body {
   display: flex;
   flex-direction: column;
   min-height: 100vh;
+  background-color: #fff;
 }
 
 .bg-image {
@@ -130,5 +131,57 @@ footer {
 }
 
 footer p {
-  margin-top: 2rem;
+  margin-top: 1rem;
 }
+
+.card-img-top {
+  border-radius: 10px !important;
+  overflow: hidden;
+  transition: all 0.3s ease-in-out;
+}
+
+
+.card:hover .card-img-top {
+  opacity: 0.5;
+}
+
+.card:hover .card-title {
+  opacity: 1;
+}
+
+.card-title {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 1;
+  opacity: 0;
+  color: white;
+  text-shadow: 1px 1px 2px rgba(0,0,0,0.5);
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+.featured {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: var(--primary-color);
+}
+
+.featured .card {
+  width: 90vw;
+  background-color: var(--primary-color);
+  text-align: center;
+}
+
+.featured .card img {
+  height: 90vh; /* Updated height value */
+}
+
+.featured .card h5 {
+  font-size: 2rem;
+  font-weight: bold;
+}
+
