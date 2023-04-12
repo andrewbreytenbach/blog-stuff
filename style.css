@@ -185,3 +185,30 @@ footer p {
   font-weight: bold;
 }
 
+
+  
+  /* Medium screens */
+  @media only screen and (min-width: 768px) and (max-width: 1199px) {
+  
+    .featured {
+      
+      height: 80vh;
+      
+    }
+    
+    .featured .card img {
+      height: 70vh; /* Updated height value */
+    }
+  }
+  
+  /* Small screens */
+  @media only screen and (max-width: 767px) {
+
+    .featured {
+      height: 60vh;
+      
+    }
+    .featured .card img {
+      height: 50vh; /* Updated height value */
+    }
+  }
