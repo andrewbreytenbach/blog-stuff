@@ -59,7 +59,7 @@ body {
 .bg-image {
   width: 100%;
   height: 200px;
-  background: url('https://columbuslandmarks.org/wp-content/uploads/2018/01/header-library-shop.jpg');
+  background: url('./images/header-library-shop.jpg');
   display: flex;
   justify-content: center;
   align-items: center;
